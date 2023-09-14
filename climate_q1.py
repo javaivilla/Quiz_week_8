@@ -6,7 +6,7 @@ conn = sqlite3.connect("climate.db")
 cursor = conn.cursor()
 
 # Execute an SQL query to fetch data
-cursor.execute("SELECT year, co2, temp FROM climate_data")
+cursor.execute("SELECT Year,CO2,Temperature FROM climateData")
 
 # Fetch all rows of data from the query result
 rows = cursor.fetchall()
